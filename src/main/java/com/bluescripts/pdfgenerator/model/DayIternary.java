@@ -6,7 +6,9 @@ import lombok.Data;
 public class DayIternary {
 
   private String day;
-  private String location;
+  private String place;
+  private String checkIn;
+  private String checkOut;
   private String stay;
   private String meal;
   private String sightSeeing;

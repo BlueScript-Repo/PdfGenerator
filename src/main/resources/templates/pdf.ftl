@@ -16,7 +16,12 @@
     body{
         /* border:1px solid black; */
     }
-
+    /* .water_mark{
+       background-image: url(background123.png);
+       background-repeat:no-repeat;
+       /* background-size:cover; */
+       /* background-position:center; */
+   } */
     table td{
         font-weight: 500;
         font-size: 18px;
@@ -31,11 +36,11 @@
 </style>
 <body>
     
-    <div style="border: 1px solid #111;background-image:url(https://onvoarding.s3-ap-southeast-1.amazonaws.com/background123.png); background-repeat:no-repeat;background-position:center;" class="container mb-5 water_mark">
+    <div style="border: 1px solid #111; background-image: url(https://onvoarding.s3-ap-southeast-1.amazonaws.com/background123.png);background-repeat:no-repeat;background-position:center;" class="container mb-5 water_mark">
         <div style="padding-top: 50px;" class="header">
             <div align="center" class="row">
                 <div class="col-md-12">
-                    <img style="width: 600px;" src="https://onvoarding.s3-ap-southeast-1.amazonaws.com/log1.png" alt="">
+                    <img style="width: 600px;" src="log1.png" alt="">
                 </div>
             </div>
             <h2 style="text-decoration:underline;text-align:center;margin-top: 4%;" >Tour Proposal</h2>
@@ -55,35 +60,35 @@
                 <tr>
                     <td style="width:300px;margin-left: 10px;padding-left: 20px;">Travel Date </td>
                     <td>:</td>
-                    <td>20th Feb 2021</td>
+                    <td>${travelDate}</td>
                 </tr>
                 <tr>
                     <td style="width:300px;margin-left: 10px;padding-left: 20px;">Length Of Stay  </td>
                     <td>:</td>
-                    <td>04 Nights /05 Days</td>
+                    <td>${lengthOfStay}</td>
                 </tr>
                 <tr>
                     <td style="width:300px;margin-left: 10px;padding-left: 20px;">Minimum Number Of Pax     </td>
                     <td>:</td>
-                    <td>02 Adult’s
+                    <td>${minimumNumberOfPax}
                     </td>
                 </tr>
                 <tr>
                     <td style="width:300px;margin-left: 10px;padding-left: 20px;">Room Type </td>
                     <td>:</td>
-                    <td>01 Twin </td>
+                    <td>${roomType} </td>
                 </tr>
                 <tr>
                     <td style="width:300px;margin-left: 10px;padding-left: 20px;padding-bottom: 20px;">Destination </td>
                     <td style="padding-bottom: 20px;">:</td>
-                    <td style="padding-bottom: 20px;">Maldives</td>
+                    <td style="padding-bottom: 20px;">${destination}</td>
                 </tr>
             </tbody>
         </table>
-        <h3 class="mt-5">Tentative Day wise Itinerary:</h3>
-        <img src="https://onvoarding.s3-ap-southeast-1.amazonaws.com/maldives.jpg" style="width: 100%; height:100%" alt="">
+        <!-- <h3 class="mt-5">Tentative Day wise Itinerary:</h3>
+        <img src="maldives.jpg" style="width: 100%; height:100%" alt=""> -->
 
-        <p style="text-align:center"> <span style="font-weight: bold">Address:</span>Shop No.4 , Chintamani Gharkul,Panchpakhadi,Near Nitin Company, Service Road,Thane(W)-400602</p> style="text-align:center">
+        <p style="text-align:center;margin-top: 900px;"> <span style="font-weight: bold">Address:</span>Shop No.4 , Chintamani Gharkul,Panchpakhadi,Near Nitin Company, Service Road,Thane(W)-400602</p style="text-align:center">
         <!-- <br> -->
         <p style="text-align:center"><span style="font-weight: bold">Ph.:</span>022 25373343/42/41 <span style="font-weight: bold">Email:</span>Contact@morningstarholiday.in, <span style="font-weight: bold">Website:</span>www.morningstarholiday.in</p>
         </div>
@@ -93,11 +98,11 @@
             <div style="padding-top: 50px;margin-bottom: 100px;" class="header">
                 <div align="center" class="row mb-5">
                     <div class="col-md-12">
-                        <img style="width: 600px;" src="https://onvoarding.s3-ap-southeast-1.amazonaws.com/log1.png" alt="">
+                        <img style="width: 600px;" src="log1.png" alt="">
                     </div>
                 </div>
                 </div>
-               <h5 class="mt-5">Day 1</h5>
+               <!-- <h5 class="mt-5">Day 1</h5>
                <h5>Day Plan: Arrive Maldives</h5>
                <h5>Meal Plan: Dinner</h5>
                <p>After arrival at Male, you will be transferred to your resort by a Speed boat. On arrival, enjoy breath-taking
@@ -107,7 +112,7 @@
                 </p>
     
                 <h5 class="mt-5">
-                    Day 2 
+                    Day 2
                 </h5>
                 <h5>Day Plan: Day at Leisure or Optional Tours </h5>
                 <h5>Meal Plan: Breakfast Lunch Dinner</h5>
@@ -143,19 +148,59 @@
                     </h5>
                     <h5>Day Plan: Maldives Departure</h5>
                     <h5>Meal Plan: Breakfast Lunch
-                    </h5>
-                    <p>After Buffet breakfast, check out and proceed to the airport by speed boat, for your flight back home.</p>
-                    <p style="text-align:center;margin-top: 100px;"> <span style="font-weight: bold">Address:</span>Shop No.4 , Chintamani Gharkul,Panchpakhadi,Near Nitin Company, Service Road,Thane(W)-400602</p> style="text-align:center">
+                    </h5> -->
+
+
+                    <table class="table table-bordered border-secondary mb-5 mt-5">
+                        <thead>
+                            <th style="width:90px">
+                                Day
+                            </th>
+                            <th style="width:120px">
+                                Place
+                            </th>
+                            <th style="width:180px">
+                                Stay
+                            </th>
+                            <th style="width:60px">
+                                Check-in
+                            </th>
+                            <th style="width:60px"1>
+                                check-out
+                            </th>
+                            <th style="width:130px">
+                                Meal Plan
+                            </th>
+                            <th>
+                                Sight Seeing
+                            </th>
+                        </thead>
+                        <tbody>
+                            		<#list dayIternaryList as day>
+                            				<tr>
+                            					<td>${day.day}</td><td>${day.place}</td><td>${day.stay}</td><td>${day.checkIn}</td><td>${day.checkOut}</td><td>${day.meal}</td><td>${day.sightSeeing}</td>
+                            				</tr>
+                            		</#list>
+
+                            <tr>
+                                <td colspan="7">
+                                    Description
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p></p>
+                    <p style="text-align:center;margin-top: 500px;"> <span style="font-weight: bold">Address:</span>Shop No.4 , Chintamani Gharkul,Panchpakhadi,Near Nitin Company, Service Road,Thane(W)-400602</p style="text-align:center">
                         <!-- <br> -->
                         <p style="text-align:center"><span style="font-weight: bold">Ph.:</span>022 25373343/42/41 <span style="font-weight: bold">Email:</span>Contact@morningstarholiday.in, <span style="font-weight: bold">Website:</span>www.morningstarholiday.in</p>
                 
      </div> 
      
-    <div style="border: 1px solid black;background-image:url(https://onvoarding.s3-ap-southeast-1.amazonaws.com/background123.png); background-repeat:no-repeat;background-position:center;" class="container mb-5 water_mark mt-3 mb-5">
+    <div style="border: 1px solid black;" class="container mb-5 water_mark mt-3 mb-5">
         <div style="padding-top: 50px;margin-bottom: 100px;" class="header">
             <div align="center" class="row mb-5">
                 <div class="col-md-12">
-                    <img style="width: 600px;" src="https://onvoarding.s3-ap-southeast-1.amazonaws.com/log1.png" alt="">
+                    <img style="width: 600px;" src="log1.png" alt="">
                 </div>
             </div>
             </div>
@@ -177,7 +222,7 @@
                 <p style="margin-left: 3%;"><span style="margin-right: 15px;"><i class="fas fa-check"></i></span>Any increase in taxes or fuel, leading to increase in surface transportation and land arrangements, which
                     may come into effect prior to departure.</p>
             
-            <p style="text-align:center;margin-top: 500px;"> <span style="font-weight: bold">Address:</span>Shop No.4 , Chintamani Gharkul,Panchpakhadi,Near Nitin Company, Service Road,Thane(W)-400602</p>style="text-align:center">
+            <p style="text-align:center;margin-top: 500px;"> <span style="font-weight: bold">Address:</span>Shop No.4 , Chintamani Gharkul,Panchpakhadi,Near Nitin Company, Service Road,Thane(W)-400602</p style="text-align:center">
                     <!-- <br> -->
                     <p style="text-align:center" class="mb-5"><span style="font-weight: bold">Ph.:</span>022 25373343/42/41 <span style="font-weight: bold">Email:</span>Contact@morningstarholiday.in, <span style="font-weight: bold">Website:</span>www.morningstarholiday.in</p>
  </div> 
@@ -185,11 +230,11 @@
 
 
 
- <div style="border: 1px solid black;background-image:url(https://onvoarding.s3-ap-southeast-1.amazonaws.com/background123.png); background-repeat:no-repeat;background-position:center;" class="container mb-5 water_mark mt-3">
+ <!-- <div style="border: 1px solid black;" class="container mb-5 water_mark mt-3">
     <div style="padding-top: 50px;margin-bottom: 100px;" class="header">
         <div align="center" class="row mb-5">
             <div class="col-md-12">
-                <img style="width: 600px;" src="https://onvoarding.s3-ap-southeast-1.amazonaws.com/log1.png" alt="">
+                <img style="width: 600px;" src="log1.png" alt="">
             </div>
         </div>
         </div>
@@ -205,7 +250,7 @@
         <tbody>
             <tr>
                 <td>
-                    Maldives
+                    Maldives 
                 </td>
                 <td>Oblu by Atmosphere at Helengeli All
                     Inclusive(Beach Villa )</td>
@@ -294,27 +339,27 @@ ADDITIONAL SERVICES:
             
         </tbody>
     </table>
-        <p style="text-align:center;margin-top: 200px;"> <span style="font-weight: bold">Address:</span>Shop No.4 , Chintamani Gharkul,Panchpakhadi,Near Nitin Company, Service Road,Thane(W)-400602</p> style="text-align:center">
+        <p style="text-align:center;margin-top: 200px;"> <span style="font-weight: bold">Address:</span>Shop No.4 , Chintamani Gharkul,Panchpakhadi,Near Nitin Company, Service Road,Thane(W)-400602</p style="text-align:center">
         <p style="text-align:center"><span style="font-weight: bold">Ph.:</span>022 25373343/42/41 <span style="font-weight: bold">Email:</span>Contact@morningstarholiday.in, <span style="font-weight: bold">Website:</span>www.morningstarholiday.in</p>
-</div> 
+</div>  -->
 
 
 
 
 
  
-<div style="border: 1px solid black;background-image:url(https://onvoarding.s3-ap-southeast-1.amazonaws.com/background123.png); background-repeat:no-repeat;background-position:center;" class="container mb-5 water_mark mt-3">
+<div style="border: 1px solid black;" class="container mb-5 water_mark mt-3">
     <div style="padding-top: 50px;margin-bottom: 100px;" class="header">
         <div align="center" class="row mb-5">
             <div class="col-md-12">
-                <img style="width: 600px;" src="https://onvoarding.s3-ap-southeast-1.amazonaws.com/log1.png" alt="">
+                <img style="width: 600px;" src="log1.png" alt="">
             </div>
         </div>
         </div>
        <h4 style="text-decoration: underline;">Option1:</h4>           
-       <h4 style="text-decoration: underline;">Total Cost : 2 adult</h4>           
+       <!-- <h4 style="text-decoration: underline;">Total Cost : 2 adult</h4>            -->
        
-       <table class="table table-bordered border-secondary mb-5 mt-5">
+       <!-- <table class="table table-bordered border-secondary mb-5 mt-5">
            <thead>
                <th>
                    Per Couple
@@ -331,7 +376,7 @@ ADDITIONAL SERVICES:
                    INR-210000
                </td>
            </tbody>
-       </table>
+       </table> -->
        <h4 style="text-decoration: underline;margin-top:20px ;">Flight Details :</h4>
        <p>GoAir G8-1530 BOM(09:10) MLE(12:00) 20th February 2021</p>
        <p class="mb-5">IndiGo 6E-1785 MLE(14:05) BOM(17:40) 24th February 2021</p>
@@ -436,7 +481,7 @@ liability for loss that you may suffer due to incorrect information.*
         <p>Note : In addition to Airline Charges, Morning star Holidays charges a service fee of Rs. 100 per
             ticket/passenger for all cancellations and rescheduling.</p>
 
-        <p style="text-align:center;margin-top: 200px;"> <span style="font-weight: bold">Address:</span>Shop No.4 , Chintamani Gharkul,Panchpakhadi,Near Nitin Company, Service Road,Thane(W)-400602</p> style="text-align:center">
+        <p style="text-align:center;margin-top: 350px;"> <span style="font-weight: bold">Address:</span>Shop No.4 , Chintamani Gharkul,Panchpakhadi,Near Nitin Company, Service Road,Thane(W)-400602</p style="text-align:center">
         <p style="text-align:center"><span style="font-weight: bold">Ph.:</span>022 25373343/42/41 <span style="font-weight: bold">Email:</span>Contact@morningstarholiday.in, <span style="font-weight: bold">Website:</span>www.morningstarholiday.in</p>
         
 </div>
@@ -446,11 +491,11 @@ liability for loss that you may suffer due to incorrect information.*
 
 
 
-<div style="border: 1px solid black;background-image:url(https://onvoarding.s3-ap-southeast-1.amazonaws.com/background123.png); background-repeat:no-repeat;background-position:center;" class="container mb-5 water_mark mt-3">
+<div style="border: 1px solid black;" class="container mb-5 water_mark mt-3">
     <div style="padding-top: 50px;margin-bottom: 100px;" class="header">
         <div align="center" class="row mb-5">
             <div class="col-md-12">
-                <img style="width: 600px;" src="https://onvoarding.s3-ap-southeast-1.amazonaws.com/log1.png" alt="">
+                <img style="width: 600px;" src="log1.png" alt="">
             </div>
         </div>
         </div>
@@ -496,17 +541,18 @@ liability for loss that you may suffer due to incorrect information.*
        <p style="margin-left:30px;"><i class="fas fa-check"></i><span style="margin-left: 20px;" >Passport with 180 days validity from and Stamping. </span></p>
 
     
-        <p style="text-align:center;margin-top: 200px;"> <span style="font-weight: bold">Address:</span>Shop No.4 , Chintamani Gharkul,Panchpakhadi,Near Nitin Company, Service Road,Thane(W)-400602</p> style="text-align:center">
+        <p style="text-align:center;margin-top: 200px;"> <span style="font-weight: bold">Address:</span>Shop No.4 , Chintamani Gharkul,Panchpakhadi,Near Nitin Company, Service Road,Thane(W)-400602</p style="text-align:center">
         <p style="text-align:center"><span style="font-weight: bold">Ph.:</span>022 25373343/42/41 <span style="font-weight: bold">Email:</span>Contact@morningstarholiday.in, <span style="font-weight: bold">Website:</span>www.morningstarholiday.in</p>
         
 </div> 
 
 
 
+<div style="border: 1px solid black;" class="container mb-5 water_mark mt-3">
     <div style="padding-top: 50px;margin-bottom: 100px;" class="header">
         <div align="center" class="row mb-5">
             <div class="col-md-12">
-                <img style="width: 600px;" src="https://onvoarding.s3-ap-southeast-1.amazonaws.com/log1.png" alt="">
+                <img style="width: 600px;" src="log1.png" alt="">
             </div>
         </div>
         </div>
@@ -556,7 +602,7 @@ liability for loss that you may suffer due to incorrect information.*
           </tbody>
       </table>
     
-        <p style="text-align:center;margin-top: 500px;"> <span style="font-weight: bold">Address:</span>Shop No.4 , Chintamani Gharkul,Panchpakhadi,Near Nitin Company, Service Road,Thane(W)-400602</p> style="text-align:center">
+        <p style="text-align:center;margin-top: 500px;"> <span style="font-weight: bold">Address:</span>Shop No.4 , Chintamani Gharkul,Panchpakhadi,Near Nitin Company, Service Road,Thane(W)-400602</p style="text-align:center">
         <p style="text-align:center"><span style="font-weight: bold">Ph.:</span>022 25373343/42/41 <span style="font-weight: bold">Email:</span>Contact@morningstarholiday.in, <span style="font-weight: bold">Website:</span>www.morningstarholiday.in</p>
         
 </div> 

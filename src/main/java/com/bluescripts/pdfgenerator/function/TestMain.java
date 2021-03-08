@@ -12,7 +12,7 @@ import com.itextpdf.io.source.ByteArrayOutputStream;
 
 public class TestMain {
 	public static void main(String[] args) {
-		try {
+		/*try {
 
             HashMap<String,Object> params =new HashMap<>();
 
@@ -28,7 +28,7 @@ public class TestMain {
 
 		} catch (Exception ex) {
 			ex.printStackTrace();
-		}
+		}*/
 	}
 
 }
